@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(path = "api")
 public class MovieController {
-    @GetMapping
+    @GetMapping("/findMovies")
     public String getMovies() {
         return "found Movies";
     }
